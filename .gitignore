@@ -42,3 +42,6 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+.htaccess.bak
+wp-config-sample.php
+wp-cron.php
