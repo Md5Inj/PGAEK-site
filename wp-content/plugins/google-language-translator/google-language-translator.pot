@@ -1,0 +1,38 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Google Language Translator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-05 06:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.2; wp-5.1.1"
+
+#. Name of the plugin
+msgid "Google Language Translator"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://wp-studio.net/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Rob Myrick"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"The MOST SIMPLE Google Translator plugin.  This plugin adds Google "
+"Translator to your website by using a single shortcode, [google-translator]. "
+"Settings include: layout style, hide/show specific languages, hide/show "
+"Google toolbar, and hide/show Google branding. Add the shortcode to pages, "
+"posts, and widgets."
+msgstr ""

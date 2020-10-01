@@ -1,0 +1,53 @@
+body.login {
+    background: #fff;
+}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {}
+body.login div#login form#loginform {}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login:focus {
+    border-color: #329a93;
+    box-shadow: 0 0 2px #329a93ab;
+    outline: 2px solid transparent;
+}
+
+body.login div#login form#loginform input#user_pass:focus {
+    border-color: #329a93;
+    box-shadow: 0 0 2px #329a93ab;
+    outline: 2px solid transparent;
+}
+
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme::before {
+    color: #329a93 !important;
+}
+body.login div#login form#loginform p.forgetmenot input#rememberme:focus { 
+    border-color: #329a93 !important;
+    box-shadow: 0 0 2px #329a93ab !important;
+}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {
+    background: #329a93;
+    border-color: #329a93 #329a93 #329a93;
+    box-shadow: 0 -1px 0 #329a93;
+    text-shadow: 0 -1px 1px #329a93, 1px 0 1px #329a93, 0 1px 1px #329a93, -1px 0 1px #329a93;
+}
+body.login div#login p#nav {}
+body.login div#login p#nav a:hover {
+    color: #329a93;    
+}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a:hover {
+    color: #329a93;
+}
+
+.login #login_error, .login .message, .login .succes {
+    border-left: 4px solid #329a93;
+}
+
+.plugin .footer #branding a span.plugin_title {
+    color: #329a93;
+}

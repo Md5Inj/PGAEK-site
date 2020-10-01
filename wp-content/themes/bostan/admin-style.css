@@ -1,0 +1,36 @@
+.col-md-2 {
+width: 49%;
+text-align: center;
+display: inline-block;
+}
+.bostan-update h1 {
+font-size: 35px !important;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: 600;
+}
+
+.bostan-update ul {
+font-size: 15px;
+line-height: 20px;
+padding-left: 15px;
+}
+
+.bostan-update h2 .col-md-2 {
+line-height: 25px;
+}
+.bostan-update h2 {
+padding: 0;
+margin: 15px 0px;
+}
+
+.bostan-update a.notice-dismiss {
+text-decoration: none;
+}
+
+.bostan-update a.notice-dismiss:before {
+font-size: 20px;
+}
+
+.bostan-update {
+padding: 10px 15px !important;
+}

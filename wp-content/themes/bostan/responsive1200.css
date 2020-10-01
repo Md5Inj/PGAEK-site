@@ -1,0 +1,8 @@
+@media (min-width:1200px){
+.shadow_separator {
+background-size: 1200px;
+}
+.header_shadow_separator {
+background-size: 1200px;
+}
+}

@@ -1,0 +1,37 @@
+.body_width {
+	width: 1000px;
+margin: 0px auto;
+
+}
+body {
+box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,0.4);
+margin: 20px auto!important;
+}
+.site_secondary_footer {
+padding: 0;
+}
+
+.body_width .container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+@media (max-width:979px){
+.body_width {
+	width: 760px;
+}
+}
+
+@media (max-width: 767px) {
+	body {
+		background-image:none;
+		background-attachment: fixed;
+		background-size: cover;
+		background:none;
+		background:#fff!important;
+	}
+	.body_width {
+	width: auto;
+}
+}
