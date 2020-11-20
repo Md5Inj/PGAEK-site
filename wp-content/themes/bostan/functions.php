@@ -29,6 +29,7 @@ include (TEMPLATEPATH . '/inc/portfolio.php');
 include (TEMPLATEPATH . '/inc/team.php');
 include (TEMPLATEPATH . '/inc/testimonials.php');
 include (TEMPLATEPATH . '/inc/clients.php');
+include (TEMPLATEPATH . '/inc/graduates.php');
 
 //include widgets
 include (TEMPLATEPATH . '/inc/widgets/video.php');

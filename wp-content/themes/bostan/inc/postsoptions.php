@@ -12,6 +12,7 @@ function asalah_post_meta(){
 	add_meta_box("testimonials_options", sprintf( __( '%s - Testimonials Options.', 'asalah' ) , theme_name ), "testimonial_options", 'testimonial', "normal", "high");
 	add_meta_box("team_options", sprintf( __( '%s - свойства преподавателей.', 'asalah' ) , theme_name ), "team_options", 'team', "normal", "high");
 	add_meta_box("admin_options", sprintf( __( '%s - свойства администрации.', 'asalah' ) , theme_name ), "admin_options", 'admin', "normal", "high");
+    add_meta_box("graduates_options", sprintf( __( '%s - свойства порфолио выпускника.', 'asalah' ) , theme_name ), "graduates_options", 'graduates', "normal", "high");
 
 }
 
@@ -1128,6 +1129,143 @@ width: 290px;
 		</div>
 
   <?php
+}
+
+function graduates_options(){
+    global $post ;
+    ?>
+
+    <style>
+        .asalah_post_options .option-item {
+            margin-bottom: 26px;
+        }
+        .asalah_post_options .option-item .label {
+            font-weight: bold;
+            padding-bottom: 6px;
+            display: block;
+            margin-left: 2px;
+        }
+        .asalah_post_options input[type="text"] {
+            color: #777;
+            border: none;
+            border: solid 1px #EEE;
+            border-bottom: solid 1px #DDD;
+            background: white;
+            font: 13px/22px 'Merriweather', Georgia, serif;
+            width: 300px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-appearance: none;
+            display: block;
+        }
+        .asalah_post_options textarea {
+            color: #777;
+            border: none;
+            border: solid 1px #EEE;
+            border-bottom: solid 1px #DDD;
+            background: white;
+            font: 13px/22px 'Merriweather', Georgia, serif;
+            width: 100%;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-appearance: none;
+            display: block;
+            height: 150px;
+        }
+        .asalah_post_options select {
+            width: 200px;
+            color: #777;
+            border: 0;
+            height: 30px;
+            border: 1px #E2E2E2 solid;
+        }
+        .criteria_slider {
+            margin: 2px 7px 8px;
+            width: 290px;
+        }
+    </style>
+
+    <div class="asalah_post_options asalah_testimonial_options">
+        <?php
+        asalah_post_options(
+            array(	"name" => __("Специальность", 'asalah'),
+                "id" => "asalah_graduate_speciality",
+                "type" => "select",
+                "options" => array(
+                    'buaik' => 'Бухгалтерский учёт, анализ и контроль',
+                    'pravo' => 'Правоведение',
+                    'poit' => 'Программное обеспечение информационных технологий',
+                    'odvl' => 'Операционная деятельность в логистике'
+                )));
+
+        asalah_post_options(
+            array(	"name" => __("Образование", 'asalah'),
+                "id" => "asalah_graduate_education",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Квалификация", 'asalah'),
+                "id" => "asalah_graduate_qualification",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Мобильный телефон:", 'asalah'),
+                "id" => "asalah_graduate_modbile",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Электронная почта", 'asalah'),
+                "id" => "asalah_graduate_email",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Карьерная цель", 'asalah'),
+                "id" => "asalah_graduate_goal",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Достижения", 'asalah'),
+                "id" => "asalah_graduate_achievements",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Личные качества", 'asalah'),
+                "id" => "asalah_graduate_qualities",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Репозиторий", 'asalah'),
+                "id" => "asalah_graduate_repo",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Электронная почта", 'asalah'),
+                "id" => "asalah_graduate_email",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Профессиональные навыки", 'asalah'),
+                "id" => "asalah_graduate_skills",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Иностранные языки", 'asalah'),
+                "id" => "asalah_graduate_languages",
+                "type" => "text"));
+
+        ?>
+    </div>
+
+    <?php
 }
 
 function project_details_options() {
