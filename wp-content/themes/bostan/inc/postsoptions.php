@@ -1433,7 +1433,8 @@ function save_post(){
         'asalah_graduate_email',
         'asalah_graduate_skills',
         'asalah_graduate_languages',
-        'asalah_graduate_rating'
+        'asalah_graduate_rating',
+        'asalah_graduate_speciality'
 		);
 
 	foreach( $custom_meta_fields as $custom_meta_field ){

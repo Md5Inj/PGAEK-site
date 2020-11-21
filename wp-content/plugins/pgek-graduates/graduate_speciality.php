@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+    get_header();
+
+    const SPECIALITY_PAGE_ID = [
+        'buaik' => 28563,
+        'pravo' => 28565,
+        'poit' => 28561,
+        'odvl' => 28567
+    ];
+?>
     <div class="page_title_holder container-fluid">
         <div class="container">
             <div class="page_info">
@@ -10,16 +19,28 @@
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
             <?php
-            $posts = get_posts(array(
-                'numberposts' => 20,
-                'post_type' => 'graduates'
-            ));
+            $currentPageId = get_queried_object_id();
+            $pageNum = explode("/", get_self_link())[5];
+            $offset = isset($pageNum) ? ($pageNum * 10) - 10 : 0;
+            $args = array(
+                'posts_per_page' => 10,
+                'offset' => $offset,
+                'post_type' => 'graduates',
+                'meta_key' => 'asalah_graduate_speciality',
+                'meta_value' => array_flip(SPECIALITY_PAGE_ID)[$currentPageId]
+            );
+            $posts = get_posts($args);
+            $args["posts_per_page"] = -1;
+            $postsCount = count(get_posts($args));
             ?>
             <section class="students-page">
+                <div class="pagination-wrapper">
+                    <?php asalah_bootstrap_pagination(ceil($postsCount/10)); ?>
+                </div>
                 <div class="container-fluid">
                     <div class="row students-row pt-4 text-center">
                         <?php foreach ($posts as $post): ?>
-                            <?php $post_meta = get_post_meta($post->ID); ?>
+                            <?php $post_meta = get_post_meta($post->ID); setup_postdata($post); ?>
                             <div class="offset-md-1 col-md-2 d-flex">
                                 <div class="card" style="width: 100%; border-radius: 16px; border-width: 0">
                                     <div class="card-body flex-fill">
