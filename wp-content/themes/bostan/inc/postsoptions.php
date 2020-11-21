@@ -1418,10 +1418,22 @@ function save_post(){
 		'asalah_project_show_date',
 		'asalah_project_show_tag',
 		'asalah_custom_sidebar',
-                'asalah_custom_title_bg',
-                'asalah_title_holder',
-								'asalah_page_title',
-								'asalah_builder_top_space'
+        'asalah_custom_title_bg',
+        'asalah_title_holder',
+		'asalah_page_title',
+		'asalah_builder_top_space',
+        'asalah_graduate_education',
+        'asalah_graduate_qualification',
+        'asalah_graduate_modbile',
+        'asalah_graduate_email',
+        'asalah_graduate_goal',
+        'asalah_graduate_achievements',
+        'asalah_graduate_qualities',
+        'asalah_graduate_repo',
+        'asalah_graduate_email',
+        'asalah_graduate_skills',
+        'asalah_graduate_languages',
+        'asalah_graduate_rating'
 		);
 
 	foreach( $custom_meta_fields as $custom_meta_field ){

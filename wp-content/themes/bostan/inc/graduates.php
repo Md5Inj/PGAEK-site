@@ -1,6 +1,6 @@
 <?php
 add_action('init', 'graduates_init');
-/* SECTION - project_custom_init */
+/* SECTION - graduates_init */
 function graduates_init()
 {
     $labels = array(
@@ -30,8 +30,7 @@ function graduates_init()
         'has_archive' => true,
         'hierarchical' => true,
         'menu_position' => null,
-        'supports' => array('title', 'editor', 'thumbnail'),
-        'taxonomies' => array('category'),
+        'supports' => array('title', 'thumbnail')
     );
     // We call this function to register the custom post type
     register_post_type('graduates', $args);
@@ -42,7 +41,7 @@ add_filter('post_updated_messages', 'graduates_updated_messages');
 function graduates_updated_messages($messages)
 {
     global $post, $post_ID;
-    $messages['team'] = array(
+    $messages['graduates'] = array(
         0 => '', // Unused. Messages start at index 1.
         1 => sprintf(__('Портфолио обновлено. <a href="%s">Просмотреть портфолио</a>', 'asalah'), esc_url(get_permalink($post_ID))),
         2 => __('Поле обновлено.', 'asalah'),
@@ -60,58 +59,4 @@ function graduates_updated_messages($messages)
     );
     return $messages;
 }
-
-add_action('admin_init', 'graduate_meta_init');
-function graduate_meta_init()
-{
-    // add a meta box for WordPress 'project' type
-    add_meta_box('graduate_meta', 'Ссылка', 'graduate_meta_init', 'graduate', 'side', 'low');
-    // add a callback function to save any data a user enters in
-    add_action('save_post', 'graduate_meta_save');
-}
-
-function graduate_meta_setup()
-{
-    global $post;
-    ?>
-    <div class="portfolio_meta_control">
-        <label>URL</label>
-        <p>
-            <input type="text" name="client_url" value="<?php echo get_post_meta($post->ID, 'client_url', TRUE); ?>"
-                   style="width: 100%;"/>
-        </p>
-    </div>
-    <?php
-    // create for validation
-    echo '<input type="hidden" name="meta_noncename" value="' . wp_create_nonce(__FILE__) . '" />';
-}
-
-function graduate_meta_save($post_id)
-{
-    // check nonce
-    if (!isset($_POST['meta_noncename']) || !wp_verify_nonce($_POST['meta_noncename'], __FILE__)) {
-        return $post_id;
-    }
-    // check capabilities
-    if ('post' == $_POST['post_type']) {
-        if (!current_user_can('edit_post', $post_id)) {
-            return $post_id;
-        }
-    } elseif (!current_user_can('edit_page', $post_id)) {
-        return $post_id;
-    }
-    // exit on autosave
-    if (defined('DOING_AUTOSAVE')) {
-        if (defined('DOING_AUTOSAVE') == $DOING_AUTOSAVE) {
-            return $post_id;
-        }
-    }
-    if (isset($_POST['graduate_img_url'])) {
-        update_post_meta($post_id, 'graduate_img_url', $_POST['graduate_img_url']);
-    } else {
-        delete_post_meta($post_id, 'graduate_img_url');
-    }
-}
-
-/*--- #end  Demo URL meta box ---*/
 ?>
