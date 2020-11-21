@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Rubik:wght@500;700&display=swap");
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* ==== index.html ==== */
+div.header {
+    background: url("../assets/header.png") center no-repeat;
+}
+
+header > .container {
+    width: 100%;
+    height: 408px;
+    padding-top: 130px;
+}
+
+.header__maintext {
+    line-height: 85px;
+    font-size: 60px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.header__subtext {
+    line-height: 35px;
+    font-size: 30px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.specialities {
+    background: #e5e5e5;
+}
+
+.card-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19.07px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    color: #33363b;
+}
+
+.card-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #33363b;
+}
+
+button.button-view {
+    font-family: "Open Sans", sans-serif;
+    width: 90%;
+    height: 46px;
+    background: #329a93;
+    border-radius: 100px;
+    border-color: transparent;
+    border-width: 0;
+}
+
+a > button.button-view {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: .04em;
+    padding: 0;
+    margin: 0;
+}
+
+.card-header {
+    display: flex;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    background-color: white !important;
+    border-width: 0;
+    border-bottom: none !important;
+    border-radius: 16px !important;
+    padding-top: 8px !important;
+    padding-bottom: 0 !important;
+    margin-top: 16px;
+}
+
+h5 {
+    flex: 1;
+}
+
+.footer {
+    height: 88px;
+    background-color: #33363b;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: .02em;
+}
+
+.footer-row {
+    padding-top: 26px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* ======== */
+
+/* ==== faculty.html ==== */
+.faculty__header {
+    background-color: white;
+    height: 80px;
+}
+
+.navbar-custom {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+span.navbar-brend-custom {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: #33363b;
+}
+
+.students {
+    background: #e5e5e5;
+}
+
+.input {
+    padding: 17px;
+    padding-left: 55px;
+    width: 250px;
+    height: 48px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #f2f4f7;
+    color: #94a1bb;
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    outline: 0;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .04em;
+}
+
+input::placeholder {
+    color: #94a1bb;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .04em;
+}
+
+button.button-faculty-view {
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    height: 46px;
+    background: #329a93;
+    border-radius: 100px;
+    border-color: transparent;
+    border-width: 0;
+}
+a > button.button-faculty-view {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .04em;
+    padding: 0;
+    margin: 0;
+}
+
+.students-row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.students-row > .col {
+    padding-right: 0;
+}
+
+.card-title-custom {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    color: #33363b;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+.card-subtitle-custom {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    color: #33363b;
+    margin-bottom: 0;
+}
+
+.rating {
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+.checked {
+    color: #f2994a;
+}
+
+/* ======== */
+
+/* ==== profile.html ==== */
+.information {
+    background: #e5e5e5;
+}
+
+.profile-navbar-custom {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+}
+
+.profilecard-title-custom {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    color: #33363b;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+.profilecard-subtitle-custom {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    color: #33363b;
+    margin-bottom: 0;
+}
+
+.main-information-title {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .02em;
+    color: #329a93;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+.education-text,
+.speciality,
+.qualification,
+.mobile-phone,
+.number,
+.email,
+.address {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .02em;
+    color: #000000;
+}
+
+.information-header-text {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .02em;
+    color: #33363b;
+    text-transform: uppercase;
+}
+
+.text-information {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .02em;
+    color: #000000;
+}
+
+.keyword {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .02em;
+    color: #000000;
+}
+
+@media (max-width: 991.98px) {
+    .main-information-block {
+        padding-top: 1.3rem;
+    }
+
+    .soft-skills {
+        padding-top: 1.3rem;
+    }
+
+    .speciality-block {
+        padding-top: 1.3rem;
+    }
+
+    .header__maintext {
+        line-height: 65px;
+    }
+
+    .header-text {
+        padding-top: 80px !important;
+    }
+
+    .card-profile {
+        padding-top: 1.3rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-information-block {
+        padding-top: 1.3rem;
+    }
+
+    .soft-skills {
+        padding-top: 1.3rem;
+    }
+
+    .footer-info {
+        padding-top: 1rem;
+    }
+
+    .header-text {
+        padding-top: 40px !important;
+    }
+
+    .header__maintext {
+        line-height: 35px;
+        font-size: 30px;
+    }
+
+    .header__subtext {
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    header > .container {
+        height: 80% !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .footer {
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: .02em;
+    }
+
+    span.navbar-brend-custom {
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: .02em;
+        padding-left: 15px;
+    }
+
+    .input {
+        display: none;
+    }
+
+    .card-padding {
+        padding-top: 24px;
+    }
+
+    .information-header-text {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: .02em;
+    }
+}
