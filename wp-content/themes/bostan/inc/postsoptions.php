@@ -1262,6 +1262,11 @@ function graduates_options(){
                 "id" => "asalah_graduate_languages",
                 "type" => "text"));
 
+        asalah_post_options(
+            array(	"name" => __("Рейтинг (1 до 10)", 'asalah'),
+                "id" => "asalah_graduate_rating",
+                "type" => "text"));
+
         ?>
     </div>
 
