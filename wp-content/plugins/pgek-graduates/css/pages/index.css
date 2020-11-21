@@ -1,0 +1,100 @@
+.page-id-28569 .container.single_blog.blog_posts.new_section {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.page-id-28569 .blog_info.clearfix {
+  display: none;
+}
+.page-id-28569 html,
+.page-id-28569 body {
+  width: 100%;
+  height: 100%;
+}
+.page-id-28569 div.header {
+  background: url("../../assets/header.png") center no-repeat;
+}
+.page-id-28569 div.header .container {
+  width: 100%;
+  height: 100%;
+  padding: 7% 0 7% 0;
+}
+.page-id-28569 div.header .header__maintext {
+  line-height: 85px;
+  font-size: 60px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+.page-id-28569 div.header .header__subtext {
+  line-height: 35px;
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+.page-id-28569 .specialities {
+  background: #e5e5e5;
+}
+.page-id-28569 .specialities .container-fluid.pt-5.pb-5 .row {
+  display: flex;
+}
+.page-id-28569 .specialities .card-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19.07px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #33363b;
+}
+.page-id-28569 .specialities .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #33363b;
+}
+.page-id-28569 .specialities button.button-view {
+  font-family: "Open Sans", sans-serif;
+  width: 90%;
+  height: 46px;
+  background: #329a93;
+  border-radius: 100px;
+  border-color: transparent;
+  border-width: 0;
+}
+.page-id-28569 .specialities a > button.button-view {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  padding: 0;
+  margin: 0;
+}
+.page-id-28569 .specialities .card-header {
+  display: flex;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  background-color: white !important;
+  border-width: 0;
+  border-bottom: none !important;
+  border-radius: 16px !important;
+  padding-top: 8px !important;
+  padding-bottom: 0 !important;
+  margin-top: 16px;
+}
+.page-id-28569 .specialities h5 {
+  flex: 1;
+}
+/*# sourceMappingURL=index.css.map */
