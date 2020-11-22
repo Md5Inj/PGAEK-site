@@ -1938,6 +1938,10 @@ function asalah_posts_carousel($block_id ="", $posttype='project', $url ="", $nu
                             if ($asalah_data['asalah_portfolio_url']) {
                                 echo '</a>';
                             }
+                        } elseif (get_post_type() == 'graduates') {
+                            $project_default = (!empty($asalah_data['asalah_translate_graduates'])) ? $asalah_data['asalah_translate_graduates'] : $post_type->labels->name ;
+                            echo $project_default;
+                            echo ' <span class="divider">&raquo;</span> ';
                         } else {
                             echo $post_type->labels->name;
                         }
