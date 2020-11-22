@@ -6,7 +6,7 @@ function graduates_init()
     $labels = array(
         'name' => _x('Портфолио', 'post type general name', 'asalah'),
         'singular_name' => _x('Портфолио', 'post type singular name', 'asalah'),
-        'add_new' => _x('Добавить нвоое портфолио', 'member', 'asalah'),
+        'add_new' => _x('Добавить новое портфолио', 'member', 'asalah'),
         'add_new_item' => __('Добавить новое портфолио', 'asalah'),
         'edit_item' => __('Изменить портфолио', 'asalah'),
         'new_item' => __('Новое портфолио', 'asalah'),
