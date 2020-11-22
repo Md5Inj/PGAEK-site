@@ -1,0 +1,211 @@
+.single-graduates {
+    .social {
+        display: flex;
+        float: initial;
+        align-items: center;
+
+        .icon {
+            margin-right: 2%;
+
+            &:before {
+                font-size: 2rem;
+            }
+
+            &.icon-twitter {
+                color: #1DA1F2;
+            }
+
+            &.icon-facebook {
+                background: #4267B2;
+                border-radius: 6px;
+                padding-top: 6px;
+                color: white;
+
+                &:before {
+                    font-size: 1.5rem;
+                }
+            }
+
+            &.icon-vk {
+                color: #4c75a3;
+            }
+        }
+    }
+
+    .main_content {
+        margin: 0;
+
+        .container.new_section {
+            margin: 0;
+            width: 100%;
+
+            .information {
+                background: #e5e5e5;
+                padding: 2%;
+                padding-right: 1%;
+                padding-left: 3%;
+
+                .students-row {
+                    display: flex;
+
+                    .main-information-block {
+                        width: 65%;
+                        margin-left: 1%;
+                        margin-right: 1%;
+
+                        .row {
+                            padding-bottom: 2%;
+                        }
+                    }
+
+                    .person-info {
+                        width: 24%;
+                    }
+
+                    .profilecard-title-custom {
+                        font-family: "Open Sans", sans-serif;
+                        font-size: 1rem;
+                        line-height: 1.3125rem;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        letter-spacing: .02rem;
+                        color: #33363b;
+                        margin-bottom: 0;
+                        padding-top: 10px;
+                    }
+
+                    .profilecard-subtitle-custom {
+                        font-family: "Open Sans", sans-serif;
+                        font-size: 0.875rem;
+                        line-height: 1.3125rem;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        letter-spacing: .02rem;
+                        color: #33363b;
+                        margin-bottom: 0;
+                    }
+
+                    .main-information-title {
+                        font-family: "Open Sans", sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 0.75rem;
+                        line-height: 1rem;
+                        letter-spacing: .02rem;
+                        color: #329a93;
+                        text-transform: uppercase;
+                        padding-top: 15px;
+                    }
+
+                    .education-text,
+                    .speciality,
+                    .qualification,
+                    .mobile-phone,
+                    .number,
+                    .email,
+                    .address {
+                        font-family: "Open Sans", sans-serif;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 0.75rem;
+                        line-height: 1rem;
+                        letter-spacing: .02rem;
+                        color: #000000;
+                    }
+
+                    .information-header-text {
+                        font-family: "Open Sans", sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 1rem;
+                        line-height: 1.375rem;
+                        letter-spacing: .02rem;
+                        color: #33363b;
+                        text-transform: uppercase;
+                    }
+
+                    .text-information {
+                        font-family: "Open Sans", sans-serif;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 0.75rem;
+                        line-height: 1rem;
+                        letter-spacing: .02rem;
+                        color: #000000;
+                    }
+
+                    .keyword {
+                        font-family: "Open Sans", sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 0.75rem;
+                        line-height: 1rem;
+                        letter-spacing: .02rem;
+                        color: #000000;
+                    }
+
+                    .card {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        min-width: 0;
+                        word-wrap: break-word;
+                        background-color: white;
+                        background-clip: border-box;
+                        border: 1px solid rgba(0, 0, 0, .125);
+                        border-radius: .25rem;
+                        margin-bottom: 2%;
+
+                        .card-body {
+                            padding: 1rem 1rem;
+
+                            .card-body-title {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+
+                                .attachment-thumbnail.size-thumbnail.wp-post-image {
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+
+                        .card-footer {
+                            padding: 1rem 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: @phone-xs) {
+    .single-graduates {
+        padding-left: 4px;
+
+        .information {
+            width: 100%;
+
+            .students-row {
+                display: flex;
+                flex-direction: column;
+                padding: 2% 8%;
+
+                .person-info {
+                    width: 100% !important;
+                }
+            }
+        }
+
+        .person-info {
+            margin-bottom: 1%;
+        }
+
+        .main-information-block, .soft-skills {
+            width: 92% !important;
+            padding-left: 3%;
+        }
+    }
+}
