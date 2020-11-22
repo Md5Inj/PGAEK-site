@@ -1230,36 +1230,45 @@ function graduates_options(){
         asalah_post_options(
             array(	"name" => __("Карьерная цель", 'asalah'),
                 "id" => "asalah_graduate_goal",
-                "type" => "text"));
+                "type" => "textarea"));
 
         asalah_post_options(
             array(	"name" => __("Достижения", 'asalah'),
                 "id" => "asalah_graduate_achievements",
-                "type" => "text"));
+                "type" => "textarea"));
 
         asalah_post_options(
             array(	"name" => __("Личные качества", 'asalah'),
                 "id" => "asalah_graduate_qualities",
-                "type" => "text"));
+                "type" => "textarea"));
 
         asalah_post_options(
             array(	"name" => __("Репозиторий", 'asalah'),
                 "id" => "asalah_graduate_repo",
                 "type" => "text"));
-
-        asalah_post_options(
-            array(	"name" => __("Электронная почта", 'asalah'),
-                "id" => "asalah_graduate_email",
-                "type" => "text"));
-
         asalah_post_options(
             array(	"name" => __("Профессиональные навыки", 'asalah'),
                 "id" => "asalah_graduate_skills",
-                "type" => "text"));
+                "type" => "textarea"));
 
         asalah_post_options(
             array(	"name" => __("Иностранные языки", 'asalah'),
                 "id" => "asalah_graduate_languages",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Вконтакте (url)", 'asalah'),
+                "id" => "asalah_graduate_vk",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Twitter (url)", 'asalah'),
+                "id" => "asalah_graduate_twitter",
+                "type" => "text"));
+
+        asalah_post_options(
+            array(	"name" => __("Facebook (url)", 'asalah'),
+                "id" => "asalah_graduate_fb",
                 "type" => "text"));
 
         asalah_post_options(
@@ -1434,7 +1443,10 @@ function save_post(){
         'asalah_graduate_skills',
         'asalah_graduate_languages',
         'asalah_graduate_rating',
-        'asalah_graduate_speciality'
+        'asalah_graduate_speciality',
+        'asalah_graduate_twitter',
+        'asalah_graduate_vk',
+        'asalah_graduate_fb'
 		);
 
 	foreach( $custom_meta_fields as $custom_meta_field ){
