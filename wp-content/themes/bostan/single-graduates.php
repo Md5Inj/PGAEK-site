@@ -120,6 +120,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <?php if ($post_meta["asalah_graduate_speciality"][0] === "poit"): ?>
                                 <div class="row pt-4">
                                     <div
                                             class="card"
@@ -133,6 +134,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <?php endif; ?>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-12 soft-skills">

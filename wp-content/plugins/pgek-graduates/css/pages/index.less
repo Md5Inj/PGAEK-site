@@ -1,56 +1,73 @@
 .page-id-28569 {
+
+    article .new_section {
+        display: none;
+    }
+
     .span3.side_content {
         display: none;
     }
 
+    .main_content {
+        margin: 0;
+    }
+
     div.header {
-        background: url("../assets/header.png") center no-repeat;
+        background: url("../assets/header.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
 
         .container {
             width: 100%;
             height: 100%;
-            padding: 7% 0 7% 0;
         }
 
-        .header__maintext {
-            line-height: 5.3125rem;
-            font-size: 3.75rem;
-            font-family: "Rubik", sans-serif;
-            font-weight: 700;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: white;
-            text-align: center;
-        }
+        .header-text {
+            padding-top: 12%;
+            padding-bottom: 3%;
 
-        .header__subtext {
-            line-height: 2.1875rem;
-            font-size: 1.875rem;
-            font-family: "Rubik", sans-serif;
-            font-weight: 500;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: white;
-            text-align: center;
+            .header__maintext {
+                line-height: 5.3125rem;
+                font-size: 3.75rem;
+                font-family: "Rubik", sans-serif;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                text-align: center;
+            }
+
+            .header__subtext {
+                line-height: 2.1875rem;
+                font-size: 1.875rem;
+                font-family: "Rubik", sans-serif;
+                font-weight: 500;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                text-align: center;
+            }
         }
     }
 
 
     .specialities {
-        background: #e5e5e5;
 
         .container-fluid.pt-5.pb-5 {
             .row {
                 display: flex;
-                margin-left: 1% !important;
+                margin-left: 6% !important;
+                margin-bottom: 2%;
 
                 .speciality-block {
-                    margin-right: 3%;
                     width: 25%;
                 }
             }
         }
+
         .card.text-center {
+            width: 83% !important;
             background-color: white;
 
             .card-header {
@@ -79,11 +96,12 @@
             line-height: 1.125rem;
             font-weight: 300;
             color: #33363b;
+            padding: 0 9%;
         }
 
         button.button-view {
             font-family: "Open Sans", sans-serif;
-            width: 90%;
+            width: 60%;
             height: 46px;
             background: #329a93;
             border-radius: 100px;
@@ -105,7 +123,6 @@
 
         .card-header {
             display: flex;
-            height: 55px;
             align-items: center;
             justify-content: center;
             background-color: white;
